@@ -1,16 +1,10 @@
 package mum.edu.alphabetstore.domain;
 
-import java.io.Serializable;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-
 import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.persistence.*;
+import javax.validation.Valid;
+import java.io.Serializable;
 
 @Entity
 public class Customer implements Serializable{

@@ -1,17 +1,9 @@
 package mum.edu.alphabetstore.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-
+import mum.edu.alphabetstore.domain.Category;
+import mum.edu.alphabetstore.domain.Product;
+import mum.edu.alphabetstore.service.CategoryService;
+import mum.edu.alphabetstore.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,10 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
-import mum.edu.alphabetstore.domain.Category;
-import mum.edu.alphabetstore.domain.Product;
-import mum.edu.alphabetstore.service.CategoryService;
-import mum.edu.alphabetstore.service.ProductService;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 
 @Controller
 @RequestMapping("/admin") // map items.jsp request to ItemController class
@@ -35,7 +31,7 @@ public class AdminController {
 	private ProductService productService;
 
 	@Autowired
-	private CategoryService categoryService;
+	private CategoryService categoryService;git
 	
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String admin() {

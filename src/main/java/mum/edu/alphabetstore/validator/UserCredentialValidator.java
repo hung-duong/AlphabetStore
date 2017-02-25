@@ -1,11 +1,10 @@
 package mum.edu.alphabetstore.validator;
 
+import mum.edu.alphabetstore.domain.UserCredentials;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-
-import mum.edu.alphabetstore.domain.UserCredentials;
 
 @Component
 public class UserCredentialValidator implements Validator{

@@ -1,13 +1,12 @@
 package mum.edu.alphabetstore.validator;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import mum.edu.alphabetstore.domain.Product;
 import mum.edu.alphabetstore.exception.ProductNotFoundException;
 import mum.edu.alphabetstore.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 
 
 public class ProductIdValidator implements ConstraintValidator<ProductId, String>{

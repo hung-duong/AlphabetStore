@@ -1,25 +1,15 @@
 package mum.edu.alphabetstore.domain;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Transient;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
-
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 import org.springframework.format.annotation.NumberFormat.Style;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.persistence.*;
+import javax.validation.constraints.*;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
 public class Product implements Serializable {

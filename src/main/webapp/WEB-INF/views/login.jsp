@@ -108,8 +108,8 @@
 						<span id="auth-create-account-link"
 							class="a-button a-button-span12"> <span
 							class="a-button-inner"> <a id="createAccountSubmit"
-								tabindex="6" href="/NycSports/register" class="a-button-text"
-								role="button"> Create your Nyc account </a>
+								tabindex="6" href="/register" class="a-button-text"
+								role="button"> Create your Alphabet account </a>
 						</span></span>
 					</div>
 				</div>

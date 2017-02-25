@@ -1,7 +1,6 @@
 package mum.edu.alphabetstore.service;
 
 import mum.edu.alphabetstore.domain.Cart;
-import mum.edu.alphabetstore.domain.CartItem;
 
 public interface CartService {
 	
