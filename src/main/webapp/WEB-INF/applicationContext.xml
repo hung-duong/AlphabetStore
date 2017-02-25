@@ -25,6 +25,7 @@
 			to be developers tools and not to facilitate any production level databases 
 			<prop key="hibernate.hbm2ddl.auto">create-drop</prop> sujan -->
 
+		<!-- Hieu Ho temporary-->
 		<property name="jpaProperties">
 			<props>
 				<prop key="hibernate.hbm2ddl.auto">create-drop</prop>
@@ -32,6 +33,7 @@
 				<prop key="hibernate.hbm2ddl.import_files">populate.sql</prop>
 			</props>
 		</property>
+
 	</bean>
 
 	<bean id="dataSource"
