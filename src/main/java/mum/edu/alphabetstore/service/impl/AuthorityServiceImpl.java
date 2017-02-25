@@ -1,12 +1,11 @@
 package mum.edu.alphabetstore.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import mum.edu.alphabetstore.domain.Authority;
 import mum.edu.alphabetstore.repository.AuthorityRepository;
 import mum.edu.alphabetstore.service.AuthorityService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional

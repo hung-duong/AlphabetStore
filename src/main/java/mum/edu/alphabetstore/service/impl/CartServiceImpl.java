@@ -1,11 +1,5 @@
 package mum.edu.alphabetstore.service.impl;
 
-import java.util.Iterator;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import mum.edu.alphabetstore.domain.Cart;
 import mum.edu.alphabetstore.domain.CartItem;
 import mum.edu.alphabetstore.domain.Product;
@@ -15,6 +9,11 @@ import mum.edu.alphabetstore.repository.CartItemRepository;
 import mum.edu.alphabetstore.repository.CartRepository;
 import mum.edu.alphabetstore.service.CartService;
 import mum.edu.alphabetstore.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Iterator;
 
 
 @Service

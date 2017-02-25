@@ -1,12 +1,8 @@
 package mum.edu.alphabetstore.service;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
-
 import mum.edu.alphabetstore.domain.Category;
-import mum.edu.alphabetstore.domain.Product;
+
+import java.util.List;
 
 
 public interface CategoryService {

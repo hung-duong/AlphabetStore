@@ -1,11 +1,9 @@
 package mum.edu.alphabetstore.controller;
 
-import java.util.List;
-import java.util.Locale;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-
+import mum.edu.alphabetstore.domain.UserCredentials;
+import mum.edu.alphabetstore.service.AuthorityService;
+import mum.edu.alphabetstore.service.UserCredentialService;
+import mum.edu.alphabetstore.validator.UserCredentialValidator;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -27,10 +25,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import mum.edu.alphabetstore.domain.UserCredentials;
-import mum.edu.alphabetstore.service.AuthorityService;
-import mum.edu.alphabetstore.service.UserCredentialService;
-import mum.edu.alphabetstore.validator.UserCredentialValidator;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import java.util.List;
+import java.util.Locale;
 
 @Controller
 public class RegisterController {

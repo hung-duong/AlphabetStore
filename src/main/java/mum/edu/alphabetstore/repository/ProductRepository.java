@@ -1,15 +1,12 @@
 package mum.edu.alphabetstore.repository;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import mum.edu.alphabetstore.domain.Product;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import mum.edu.alphabetstore.domain.Product;
+import java.util.List;
 
 @Repository
 public interface ProductRepository extends CrudRepository<Product, String> {

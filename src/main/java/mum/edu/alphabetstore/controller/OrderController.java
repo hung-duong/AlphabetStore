@@ -1,34 +1,22 @@
 package mum.edu.alphabetstore.controller;
 
-import java.security.Principal;
-import java.util.Locale;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-
+import mum.edu.alphabetstore.domain.*;
+import mum.edu.alphabetstore.service.CartService;
+import mum.edu.alphabetstore.service.OrderService;
+import mum.edu.alphabetstore.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import mum.edu.alphabetstore.domain.Cart;
-import mum.edu.alphabetstore.domain.CreditCard;
-import mum.edu.alphabetstore.domain.Customer;
-import mum.edu.alphabetstore.domain.Orders;
-import mum.edu.alphabetstore.domain.ShippingDetail;
-import mum.edu.alphabetstore.domain.User;
-import mum.edu.alphabetstore.service.CartService;
-import mum.edu.alphabetstore.service.OrderService;
-import mum.edu.alphabetstore.service.UserService;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import java.security.Principal;
+import java.util.Locale;
 
 
 

@@ -1,18 +1,14 @@
 package mum.edu.alphabetstore.interceptor;
 
-import java.security.Principal;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
-
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-
 import mum.edu.alphabetstore.domain.Customer;
 import mum.edu.alphabetstore.domain.User;
 import mum.edu.alphabetstore.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class UserAuthenticationInterceptor extends HandlerInterceptorAdapter {
 

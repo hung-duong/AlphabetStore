@@ -1,13 +1,13 @@
 package mum.edu.alphabetstore.validator;
 
-import java.util.HashSet;
-import java.util.Set;
-import javax.validation.ConstraintViolation;
+import mum.edu.alphabetstore.domain.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import mum.edu.alphabetstore.domain.Product;
+import javax.validation.ConstraintViolation;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class ProductValidator implements Validator{

@@ -1,15 +1,11 @@
 package mum.edu.alphabetstore.validator;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
+import mum.edu.alphabetstore.domain.CreditCard;
+import mum.edu.alphabetstore.service.CreditCardService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import mum.edu.alphabetstore.domain.CreditCard;
-import mum.edu.alphabetstore.domain.Product;
-import mum.edu.alphabetstore.exception.ProductNotFoundException;
-import mum.edu.alphabetstore.service.CreditCardService;
-import mum.edu.alphabetstore.service.ProductService;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 
 
 public class CCNumberValidator implements ConstraintValidator<CCNumber, String>{
