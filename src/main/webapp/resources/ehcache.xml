@@ -1,0 +1,28 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd.xml"
+         updateCheck="true"
+         monitoring="autodetect"
+         dynamicConfig="true" xmlns="">
+
+    <diskStore path="java.io.tmpdir" />
+
+    <cache
+            name="product"
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="0"
+            timeToLiveSeconds="9999"
+            overflowToDisk="false"
+            memoryStoreEvictionPolicy="LFU" />
+
+    <cache
+            name="productByCat"
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="0"
+            timeToLiveSeconds="10"
+            overflowToDisk="false"
+            memoryStoreEvictionPolicy="LFU" />
+
+
+</ehcache>
