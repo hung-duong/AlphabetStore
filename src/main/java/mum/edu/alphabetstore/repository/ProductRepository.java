@@ -1,6 +1,7 @@
 package mum.edu.alphabetstore.repository;
 
 import mum.edu.alphabetstore.domain.Product;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
@@ -11,7 +12,11 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends CrudRepository<Product, String> {
 
-	
+	@Cacheable("product")
+	Product findOne(String name);
+
+	Product save(Product var1);
+
 	@Query("select p.productId from Product p")
 	List<String> getProductsIds();
 	
